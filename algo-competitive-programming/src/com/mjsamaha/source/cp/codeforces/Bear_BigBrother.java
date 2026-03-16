@@ -23,6 +23,19 @@ public class Bear_BigBrother {
 	 */
 	static void solve() throws Exception {
 	
+		int A = nextInt();
+		int B = nextInt();
+		
+		int year = 0;
+		
+		while (A <= B) { // while A(limak) is less than B continue to multiply
+			
+			A = A*3;
+			B = B*2;
+			year++;
+		}
+		
+		out(year);
 		
 		
 

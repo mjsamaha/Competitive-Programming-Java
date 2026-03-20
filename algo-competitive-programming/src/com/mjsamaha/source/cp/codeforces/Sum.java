@@ -1,16 +1,10 @@
 package com.mjsamaha.source.cp.codeforces;
 
 
+import java.io.*;
+import java.util.*;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.util.Arrays;
-import java.util.StringTokenizer;
-
-public class WayTooLongWords {
+public class Sum {
 
 	/**
 	 * Constants
@@ -29,33 +23,26 @@ public class WayTooLongWords {
 	 * Main
 	 */
 	static void solve() throws Exception {
+
+		int t = nextInt();
+
+		int a, b, c;
+
 		
-		int n = nextInt();
-		int max = 10;
-		int currSize = 0;
-		while (n > 0) {
-			String word = nextString();
+
+		while (t-- > 0) {
 			
-			if (word.length() > max) {
-				
-				// get first char of word
-				// get last char of word
-				// store length into currSize
-				// create a word with firstChar - size - lastChar
-				// sysout the abbreviation
-				 
+			a = nextInt();
+			b = nextInt();
+			c = nextInt();
+
+			if (a + b == c || a + c == b || c + b == a) {
+				out("YES");
 			} else {
-				out(word);
+				out("NO");
 			}
-			
-			
-			n--;
 		}
-		
-		
-		
-		
-		
+
 	}
 
 	static void out(Object o) {

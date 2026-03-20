@@ -1,5 +1,6 @@
 package com.mjsamaha.source.cp.codeforces;
 
+
 import java.io.*;
 import java.util.*;
 
@@ -35,7 +36,9 @@ public class Bear_BigBrother {
 			year++;
 		}
 		
-		out(year);
+		out(year); 
+		
+		
 		
 		
 

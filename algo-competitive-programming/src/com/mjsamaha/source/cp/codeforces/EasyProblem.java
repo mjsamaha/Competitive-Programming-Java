@@ -4,7 +4,7 @@ package com.mjsamaha.source.cp.codeforces;
 import java.io.*;
 import java.util.*;
 
-public class Anton_Danik {
+public class EasyProblem {
 
 	/**
 	 * Constants
@@ -23,45 +23,27 @@ public class Anton_Danik {
 	 * Main
 	 */
 	static void solve() throws Exception {
-		/**
-		 * # of games string --> convert to charArray
-		 * 
-		 * iterate through char array
-		 * 
-		 * count how many times A and D appear
-		 * 
-		 * if A is greater than D --> print Anton if A is less than D --> print Danik if
-		 * A is the same as D --> print Friendship
-		 */
-
+		
 		int n = nextInt();
-
-		String s = nextString();
-
-		s.toCharArray(); // converts to char arr[] { " ", " " }
-
-		int acount = 0;
-		int dcount = 0;
-
-		for (int i = 0; i < s.length(); i++) {
-			if (s.charAt(i) == 'A') { // I had if (s.contains("A")){ -- is wrong, will always be true
-				acount++;
-			} else {
-				dcount++;
+		
+		int x;
+		boolean seen = false;
+		
+		for (int i = 0; i < n; i++) {
+			x = nextInt();
+			if (x == 1) {
+				seen = true;
 			}
 		}
-
-		if (acount == dcount) {
-			out("Friendship");
-		} else if (acount > dcount) {
-			out("Anton");
+		
+		if (seen) {
+			out("HARD");
 		} else {
-			out("Danik");
+			out("EASY");
 		}
 		
-		// time: O(n) -- reading string, n 
-		// space: O(n) -- input size
-
+	
+		
 	}
 
 	static void out(Object o) {
